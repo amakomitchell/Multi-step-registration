@@ -1,0 +1,36 @@
+<!-- <router-outlet></router-outlet> -->
+<div>
+    <div *ngIf="step === 1">
+        <app-user-reg
+            (notify)="onLoginDataNotify($event)"
+            (next)="onNext($event)"
+            [email]="login.email" 
+            [password]="login.password" 
+            [confirmPassword]="login.confirmPassword"
+        >
+        </app-user-reg>
+    </div>
+    <div *ngIf="step === 2">
+        <app-settings
+            (notify)=" onSettingDataNotify($event)"
+            (next)="onNext($event)"
+            [firstName]="settings.firstName"
+            [lastName]="settings.lastName"
+            [pin]="settings.pin"
+            [memberCode]="settings.memberCode"
+        >
+        </app-settings>
+    </div>
+    <div *ngIf="step === 3">
+        <app-preferences
+            (notify)="onPreferenceDataNotify($event)"
+            (next)="onNext($event)"
+            [mobilePhoneNumber]="preferences.mobilePhoneNumber"
+            [mobileCarrierId]="preferences.mobileCarrierId"
+            [prefContactAdjustment]="preferences.prefContactAdjustment"
+            [prefContactApproval]="preferences.prefContactApproval"
+            [prefContactPto]="preferences.prefContactPto"
+        >
+        </app-preferences>
+    </div>
+</div>

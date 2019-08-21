@@ -1,0 +1,57 @@
+<br><br>
+<div class="row">
+  <div class="col-md-4">
+    <a [routerLink]="['/dashboard']">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+          <p class="card-text">Hours Worked</p>
+          <h4>30.00 Hours</h4>
+          <div class="row">
+            <div class="col">
+              <p>Last Week<br>40.00</p>
+            </div>
+            <div class="col">
+              <p>October<br>160.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div> <!-- col-sm-4 ends here-->
+  <div class="col-md-4">
+    <a [routerLink]="['/dashboard']">
+      <div class="card bg-secondary mb-3">
+        <div class="card-body">
+          <p class="card-text">Vacation Hours Available</p>
+          <h4 (click)="openModal(template)">24 Hours</h4>
+          <div class="row">
+            <div class="col">
+              <p>Used<br>16.00</p>
+            </div>
+            <div class="col">
+              <p>Pending<br>8.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div><!-- col-sm-4 ends here-->
+  <div class="col-md-4">
+    <a [routerLink]="['/']">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+          <p class="card-text">Available Sick Leave</p>
+          <h4>24 Hours</h4>
+          <div class="row">
+            <div class="col">
+              <p>Used<br>16.00</p>
+            </div>
+            <div class="col">
+              <p>Pending<br>8.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div><!-- col-sm-4 ends here-->
+</div>

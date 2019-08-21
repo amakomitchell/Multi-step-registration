@@ -1,0 +1,14 @@
+#signup {
+    /* border-style: solid; */
+    margin-top: 7%;
+    width: 60%;
+    background-color: white;
+
+}
+input.ng-valid {
+    border-left: 5px solid #42A948; /* green */
+}
+
+input.ng-invalid.ng-touched {
+    border-left: 5px solid #A94442; /* red */
+}

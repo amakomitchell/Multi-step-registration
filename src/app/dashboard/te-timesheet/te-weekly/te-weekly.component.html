@@ -1,0 +1,56 @@
+<!-- <div class="te-weekly-container mat-elevation-z8">
+  <div class="te-weekly-loading-shade"
+        *ngIf="isLoadingResults || isRateLimitReached">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+    <div class="example-rate-limit-reached" *ngIf="isRateLimitReached">
+      GitHub's API rate limit has been reached. It will be reset in one minute.
+    </div>
+  </div>
+
+  <div class="te-weekly-table-container">
+
+    <table mat-table [dataSource]="data" class="example-table"
+            matSort matSortActive="created" matSortDisableClear matSortDirection="asc">
+      
+      <ng-container matColumnDef="No">
+        <div *matHeaderCellDef>#</div>
+        <div *matCellDef="let Dashboard">{{Dashboard.dashboard_id}}</div>
+      </ng-container>
+
+      <ng-container matColumnDef="period">
+          <div *matHeaderCellDef>Period Ending Date</div>
+          <div class="period-cell"
+                    *matCellDef="let Dashboard">{{Dashboard.end_Date}}</div>
+      </ng-container>
+
+      <ng-container matColumnDef="duration">
+          <div *matHeaderCellDef>Duration</div>
+          <div class="hour-cell"
+                    *matCellDef="let Dashboard">{{Dashboard.hour}}</div>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <div *matHeaderCellDef>Status</div>
+        <div class="status-cell"
+                  *matCellDef="let Dashboard">{{Dashboard.status}}</div>
+      </ng-container>
+
+      <ng-container matColumnDef="worksite">
+        <div *matHeaderCellDef>Worksite</div>
+        <div class="worksite-cell"
+                  *matCellDef="let Dashboard">{{Dashboard.worksite}}</div>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let Dashboard; columns: displayedColumns;"
+        (click)="onRowClicked(Dashboard)"></tr>
+    </table>
+  </div>
+
+  <mat-paginator [length]="resultsLength" [pageSize]="20"></mat-paginator>
+</div> -->
+<div>
+  <ul>
+    <li></li>
+  </ul>
+</div>

@@ -1,0 +1,40 @@
+<div class="mat-elevation-z8 data-table">
+  <mat-table class="dasboard-table mat-elevation-z8" [dataSource]="dataSource">
+  
+    <ng-container matColumnDef="No">
+        <div *matHeaderCellDef>#</div>
+        <div *matCellDef="let Dashboard">{{Dashboard.dashboard_id}}</div>
+    </ng-container>
+  
+    <ng-container matColumnDef="period">
+        <div *matHeaderCellDef>Period Ending Date</div>
+        <div class="period-cell"
+                  *matCellDef="let Dashboard">{{Dashboard.end_Date}}</div>
+    </ng-container>
+  
+    <ng-container matColumnDef="duration">
+        <div *matHeaderCellDef>Duration</div>
+        <div class="hour-cell"
+                  *matCellDef="let Dashboard">{{Dashboard.hour}}</div>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+      <div *matHeaderCellDef>Status</div>
+      <div class="status-cell"
+                *matCellDef="let Dashboard">{{Dashboard.status}}</div>
+  </ng-container>
+
+  <ng-container matColumnDef="worksite">
+    <div *matHeaderCellDef>Worksite</div>
+    <div class="worksite-cell"
+              *matCellDef="let Dashboard">{{Dashboard.worksite}}</div>
+  </ng-container>
+    
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    
+  </mat-table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>
